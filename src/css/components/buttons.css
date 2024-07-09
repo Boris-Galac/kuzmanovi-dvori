@@ -1,0 +1,63 @@
+button {
+  background-color: transparent;
+  border: 0;
+}
+.hero__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  width: max-content;
+  padding-inline: 1.6rem;
+  padding-block: 0.8rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  outline: 2px solid var(--white);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.183);
+  backdrop-filter: blur(15px);
+  gap: 1rem;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+.cta-slide {
+  width: 80px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+  opacity: 0.5;
+  height: 100%;
+  z-index: 10;
+  transform: skewX(-8deg);
+  position: absolute;
+  left: -1rem;
+  animation: cta-slide 5s ease-in-out infinite;
+}
+@keyframes cta-slide {
+  0% {
+    left: -10rem;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.gallery-btn {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-inline: 2rem;
+  padding-block: 0.6rem;
+  z-index: 2;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 600;
+  outline: 2px solid var(--white);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(7px);
+  border-radius: 100vmax;
+  margin: auto;
+}

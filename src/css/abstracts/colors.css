@@ -1,0 +1,7 @@
+:root {
+  --black: #000;
+  --dark: hsl(210, 9%, 17%);
+  --white: #fff;
+  --main-clr: hsl(203, 22%, 32%);
+  --ponuda-row-clr: hsl(28, 95%, 93%);
+}

@@ -1,0 +1,43 @@
+.hero {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.hero-slider {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  z-index: -1;
+}
+.hero-slider::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+.hero-slider img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.hero__content-box {
+  background-color: hsla(0, 0%, 0%, 0.184);
+  backdrop-filter: blur(8px);
+  padding-block: 2rem;
+  padding-inline: 1rem;
+  border-radius: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.hero__subheadline-upper {
+}
+.scroll-down-btn {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 2rem;
+}

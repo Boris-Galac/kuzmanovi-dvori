@@ -1,0 +1,114 @@
+.ponuda {
+  background-color: var(--main-clr);
+  isolation: isolate;
+}
+.ponuda::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background: url("/src/assets/images/ponuda-overlay.png") no-repeat center
+    center/cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.ponuda__wrapper {
+  display: grid;
+}
+.ponuda__article {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  border-radius: 5px;
+  order: 2;
+}
+.ponuda__img {
+  order: 1;
+  position: relative;
+  bottom: -50px;
+}
+.ponuda__gallery img {
+  width: 100%;
+}
+.ponuda__gallery {
+  width: 200%;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.ponuda__wrapper--second {
+  position: relative;
+}
+.ponuda__wrapper--second {
+  height: 40vh;
+  margin-block: 5rem;
+}
+.gallery-block-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.ponuda__info {
+}
+.ponuda__info-row {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: var(--ponuda-row-clr);
+  padding: 0.5rem;
+  outline: 2px solid var(--dark);
+  border-radius: 5px;
+}
+.ponuda__separator {
+  height: 2px;
+  width: 50%;
+  background-color: var(--black);
+  margin-block: 2rem;
+}
+.ponuda__info-rows-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.ponuda__info-rows-wrapper > * {
+  width: 100%;
+}
+.ponuda__info-rows-big-wrapper {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+.more-info__wrapper {
+  display: grid;
+  gap: 1rem;
+}
+.more-info__row {
+  display: flex;
+  align-items: center;
+}
+.more-info__inner-wrapper {
+  border-bottom: 1px solid hsla(360, 100%, 100%, 0.24);
+  padding-bottom: 0.5rem;
+}
+.udaljenost-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.udaljenost-row > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.udaljenost-row > span {
+}
+.info-udaljenost-num {
+  font-size: 18px;
+}
+.udaljenost-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

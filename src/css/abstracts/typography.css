@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+body {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+h2 {
+}
+.h2-heading {
+  color: var(--dark);
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.h3-heading {
+  position: relative;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.h4-heading {
+  font-size: 2rem;
+}
+.hero__headline {
+  font-size: clamp(2.5rem, 7vw, 10rem);
+  line-height: 100%;
+}
+.hero__subheadline {
+  text-transform: none;
+  letter-spacing: 1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.paragraph {
+  line-height: 160%;
+  font-weight: 500;
+  font-size: 20px;
+}
+.dark-text {
+  color: var(--dark);
+}
+.ponuda__heading {
+  text-align: center;
+}
+.ponuda__heading {
+  position: relative;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+.ponuda-h3-heading {
+  margin-bottom: 6rem;
+}
+.ponuda-paragraph {
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 20px;
+}
+.info-row-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.more-info-paragraph {
+  font-size: 18px;
+}
+.more-info-h4-heading {
+  margin-bottom: 2rem;
+}
