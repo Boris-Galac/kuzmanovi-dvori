@@ -9,12 +9,15 @@
 @import "components/blog-card.css";
 @import "components/recenzija-card.css";
 @import "components/footer.css";
-/* pages */
+/* sections */
 @import "sections/hero.css";
 @import "sections/dvori.css";
 @import "sections/ponuda.css";
 @import "sections/blog-feed.css";
 @import "sections/recenzije.css";
 @import "sections/contact.css";
+/* pages */
+@import "pages/search.css";
+
 /* utilities */
 @import "utilities/globals.css";

@@ -92,9 +92,18 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
+}
+.call-btn:hover {
+  background-color: #5ab035;
 }
 .call-btn--gmail {
   background-color: var(--white);
+  transition: 0.3s;
+}
+.call-btn--gmail:hover {
+  background-color: var(--dark);
+  outline: 2px solid var(--white);
 }
 .scroll-down-btn {
   position: absolute;
@@ -110,4 +119,38 @@ button {
   to {
     transform: translateX(-50%) translateY(0rem);
   }
+}
+.search-btn > * {
+  pointer-events: none;
+}
+/* back to top */
+.back-to-top-btn {
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 100vmax;
+  aspect-ratio: 1;
+  width: 50px;
+  position: fixed;
+  bottom: 1.7rem;
+  right: 1rem;
+  border: 2px solid hsl(0, 0%, 16%);
+  transition: 0.2s;
+  display: grid;
+  place-items: center;
+  z-index: 5;
+  cursor: pointer;
+}
+.back-to-top-btn img {
+  scale: 0.6;
+}
+.back-to-top-btn:hover {
+  background-color: hsl(0, 0%, 7%);
+}
+.back-to-top-btn[data-visible="false"] {
+  opacity: 0;
+  pointer-events: none;
+}
+.back-to-top-btn[data-visible="true"] {
+  opacity: 1;
+  pointer-events: visible;
 }

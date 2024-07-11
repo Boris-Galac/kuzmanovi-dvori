@@ -18,16 +18,15 @@
     <a href="index.html" class="header__logo"><img src="/src/assets/icons/logo.svg" alt="" /></a>
     <nav class="nav" id="nav" aria-expanded="false">
       <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link">O dvorima</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Kuzmanovi dvori</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Galerija</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Recenzije</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Kontakt</a></li>
+        <li class="nav__item"><a href="#dvori" class="nav__link">O dvorima</a></li>
+        <li class="nav__item"><a href="#ponuda" class="nav__link">Ponuda</a></li>
+        <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+        <li class="nav__item"><a href="#recenzije" class="nav__link">Recenzije</a></li>
+        <li class="nav__item"><a href="#kontakt" class="nav__link">Kontakt</a></li>
       </ul>
     </nav>
     <div class="nav__right-col">
-      <button>
+      <button class="search-btn">
         <img src="/src/assets/icons/search-icon.svg" alt="search icon" />
       </button>
       <button class="ham-btn" aria-label="ham button" data-active="false" tabindex="0" aria-controls="nav">
@@ -79,7 +78,7 @@
         <img src="/src/assets/icons/scroll-down-icon.svg" alt="scroll down btn" /></a>
     </section>
     <!-- dvori section -->
-    <section class="dvori">
+    <section class="dvori" id="dvori">
       <div class="container">
         <div class="dvori-row">
           <img src="/src/assets/images/dvori-imgs.png" alt="dvori image" />
@@ -105,7 +104,7 @@
       </div>
     </section>
     <!-- ponuda section -->
-    <section class="ponuda">
+    <section class="ponuda" id="ponuda">
       <div class="container">
         <h2 class="h2-heading ponuda__heading ornament-heading">
           Kuzmanovi dvori
@@ -184,7 +183,7 @@
               </div>
             </div>
           </div>
-          </div>
+      </div>
           <h4 class="h4-heading more-info-h4-heading">Dodatni opis</h4>
           <div class="more-info__wrapper">
             <div class="more-info__inner-wrapper">
@@ -273,7 +272,7 @@
           </div>
     </section>
     <!-- blog-feed section -->
-    <section class="blog-feed">
+    <section class="blog-feed" id="blog">
       <h2 class="h2-heading blog-feed-heading dark-text dark-ornament-heading">Blog</h2>
       <div class="blog-feed__inner-wrapper container">
         <article class="blog-card">
@@ -300,7 +299,7 @@
       </div>
     </section>
     <!-- recenzije section -->
-    <section class="recenzije">
+    <section class="recenzije" id="recenzije">
       <h2 class="h2-heading recenzije-h2-heading dark-ornament-heading">Recenzije</h2>
       <div class="recenzije__wrapper container">
         <!-- Swiper -->
@@ -351,7 +350,7 @@
       </div>
     </section>
     <!-- contact section -->
-    <section class="contact">
+    <section class="contact" id="kontakt">
       <div class="container">
         <div class="contact__outter-wrapper">
           <div class="contact__wrapper">
@@ -392,6 +391,23 @@
       <img class="contact__13-overlay" src="/src/assets/images/contact-overlay-13.jpg" aria-hidden="true">
     </section>
   </main>
+  <button
+  class="back-to-top-btn"
+  data-visible="false"
+  aria-label="scroll to top of the page"
+>
+  <img src="/src/assets/icons/top-icon.svg" alt="scroll to top icon" />
+</button>
+  <div class="overlay" data-active="false" aria-expanded="false">
+    <form class="search-form">
+      <div class="search-input-wrapper">
+        <input type="text" placeholder="Pretraži blogove..." class="search-input">
+        <button class="search-form__submit" type="submit">
+          <img src="/src/assets/icons/search-icon.svg" aria-hidden="true">
+        </button>
+      </div>
+    </form>
+  </div>
   <footer class="footer">
     <img src="/src/assets/icons/logo.svg" class="footer__logo" alt="footer logo">
     <nav class="footer__logo">

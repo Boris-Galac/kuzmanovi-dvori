@@ -44,3 +44,48 @@ var swiper = new Swiper(".recenzija-swiper", {
     },
   },
 });
+
+//// BACK TO TOP
+
+const backToTopbtn = document.querySelector(".back-to-top-btn");
+
+backToTopbtn.addEventListener("click", (e) => {
+  window.scroll({
+    top: 0,
+  });
+});
+window.addEventListener("scroll", (e) => {
+  if (window.scrollY > 150) {
+    backToTopbtn.setAttribute("data-visible", "true");
+  } else backToTopbtn.setAttribute("data-visible", "false");
+});
+
+// OPEN SEARCH MODAL
+
+const searchBtn = document.querySelector(".search-btn");
+const overlay = document.querySelector(".overlay");
+searchBtn.addEventListener("click", (e) => {
+  overlay.setAttribute("data-active", "true");
+  overlay.setAttribute("aria-expanded", "true");
+});
+window.addEventListener("click", (e) => {
+  if (e.target.matches(".overlay")) {
+    overlay.setAttribute("data-active", "false");
+    overlay.setAttribute("aria-expanded", "false");
+  }
+});
+
+/////////// HIDE HEADER ON SCROLL
+
+let lastScrollTop = 0;
+let navbar = document.querySelector(".header");
+let navbarHeight = document.querySelector(".header").scrollHeight;
+window.addEventListener("scroll", (e) => {
+  let scrollTop = window.scrollY || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    navbar.style.top = `-${navbarHeight}px`;
+  } else {
+    navbar.style.top = "0";
+  }
+  lastScrollTop = scrollTop;
+});

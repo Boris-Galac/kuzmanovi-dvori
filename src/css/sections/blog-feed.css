@@ -11,3 +11,10 @@
   height: 100%;
   z-index: -1;
 }
+@media (min-width: 1024px) {
+  .blog-feed__inner-wrapper {
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+  }
+}

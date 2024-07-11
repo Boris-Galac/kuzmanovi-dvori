@@ -47,3 +47,36 @@
 .icon {
   object-fit: contain;
 }
+.overlay {
+  display: grid;
+  place-items: center;
+  inset: 0;
+  background-color: #000000ad;
+  position: fixed;
+}
+.overlay[data-active="false"] {
+  animation: overlay-closed 0.5s forwards;
+}
+@keyframes overlay-closed {
+  from {
+    pointer-events: visible;
+    opacity: 1;
+  }
+  to {
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+.overlay[data-active="true"] {
+  animation: overlay-open 0.5s forwards;
+}
+@keyframes overlay-open {
+  from {
+    pointer-events: none;
+    opacity: 0;
+  }
+  to {
+    pointer-events: visible;
+    opacity: 1;
+  }
+}

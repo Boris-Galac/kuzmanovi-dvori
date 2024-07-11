@@ -9,6 +9,7 @@
   position: fixed;
   inset: auto 0;
   z-index: 5;
+  transition: 0.5s;
 }
 .header__logo {
   font-size: 2rem;
@@ -141,5 +142,8 @@
   }
   .ham-btn {
     display: none;
+  }
+  .header {
+    padding-inline: 2rem;
   }
 }

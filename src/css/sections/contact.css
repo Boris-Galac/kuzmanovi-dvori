@@ -48,4 +48,12 @@
   .contact__13-overlay {
     display: none;
   }
+  .contact__13-overlay {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 64%;
+  }
 }

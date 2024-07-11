@@ -39,6 +39,9 @@ address {
   font-size: 16px;
   font-style: normal;
 }
+button {
+  cursor: pointer;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
