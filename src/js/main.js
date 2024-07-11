@@ -26,3 +26,21 @@ var swiper = new Swiper(".hero-slider", {
     delay: 2500,
   },
 });
+
+var swiper = new Swiper(".recenzija-swiper", {
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  },
+});

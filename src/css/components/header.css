@@ -61,7 +61,25 @@
   gap: 10vh;
 }
 .nav__link {
+  position: relative;
   color: var(--white);
+  font-size: 20px;
+}
+.nav__link::after {
+  content: "";
+  position: absolute;
+  background-color: var(--white);
+  height: 1px;
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: 0.3s;
+}
+.nav__link:hover::after {
+  transform: scaleX(1);
 }
 .ham-btn {
   position: relative;

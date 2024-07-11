@@ -102,8 +102,6 @@
   align-items: center;
   gap: 5px;
 }
-.udaljenost-row > span {
-}
 .info-udaljenost-num {
   font-size: 18px;
 }
@@ -111,4 +109,23 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+@media (min-width: 1200px) {
+  .ponuda__wrapper:nth-of-type(1) {
+    display: flex;
+  }
+  .ponuda__img {
+    transform: translateX(-10px);
+    bottom: unset;
+    order: 2;
+    width: 30vw;
+    object-fit: contain;
+    scale: 1.3;
+    max-width: 30rem;
+  }
+  .ponuda__info {
+  }
+  .ponuda__info-rows-wrapper {
+    flex-direction: row;
+  }
 }

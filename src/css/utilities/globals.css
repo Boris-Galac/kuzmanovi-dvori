@@ -28,6 +28,18 @@
   transform: translateX(-33%);
   scale: 0.6;
 }
+.dark-ornament-heading::after {
+  content: "";
+  position: absolute;
+  background: url("/src/assets/images/dark-ornament.svg") no-repeat center
+    center/cover;
+  bottom: -54px;
+  width: 340px;
+  height: 50px;
+  object-fit: contain;
+  transform: translateX(-50%);
+  left: 50%;
+}
 .row {
   display: flex;
   align-items: center;

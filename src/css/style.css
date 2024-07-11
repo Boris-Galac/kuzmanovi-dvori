@@ -6,11 +6,15 @@
 /* components */
 @import "components/header.css";
 @import "components/buttons.css";
+@import "components/blog-card.css";
+@import "components/recenzija-card.css";
 @import "components/footer.css";
 /* pages */
 @import "sections/hero.css";
 @import "sections/dvori.css";
 @import "sections/ponuda.css";
 @import "sections/blog-feed.css";
+@import "sections/recenzije.css";
+@import "sections/contact.css";
 /* utilities */
 @import "utilities/globals.css";

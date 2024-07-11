@@ -1,0 +1,51 @@
+.contact {
+  background-color: var(--recenzija-card-clr);
+}
+.contact__wrapper {
+  display: grid;
+  gap: 2rem;
+}
+.contact__content-wrapper {
+  display: grid;
+  gap: 1rem;
+}
+.contact__call-action-wrapper {
+  display: grid;
+  gap: 1rem;
+}
+.contact__call-action {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: max-content;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.contact__location-wrapper {
+  display: grid;
+  gap: 1rem;
+}
+.contact__address {
+  display: flex;
+  gap: 0.5rem;
+}
+.contact__outter-wrapper {
+  display: grid;
+  gap: 4rem;
+}
+.google-map {
+  width: 100%;
+  max-width: 650px;
+  height: 40vh;
+  outline: 3px solid #7878ff;
+  border-radius: 10px;
+}
+.contact__13-overlay {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .contact__13-overlay {
+    display: none;
+  }
+}

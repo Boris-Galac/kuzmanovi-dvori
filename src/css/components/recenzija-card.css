@@ -1,0 +1,25 @@
+.recenzija-card {
+  position: relative;
+  background-color: var(--recenzija-card-clr);
+  aspect-ratio: 3/4;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  border: 2px solid var(--white);
+  border-radius: 10px;
+  box-shadow: 0 0.3rem 2rem hsla(249, 100%, 11%, 0.6);
+  isolation: isolate;
+}
+.recenzija-card::before {
+  content: "";
+  position: absolute;
+  background: url("/src/assets/images/recenzija-quote-illustration.svg")
+    no-repeat;
+  aspect-ratio: 1;
+  width: 70px;
+  right: 1rem;
+  bottom: 5rem;
+  z-index: -1;
+}

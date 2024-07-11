@@ -1,318 +1,432 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website</title>
-    <meta name="description" content="Lorem ipsum dolor sit amet." />
-    <meta name="robots" content="index, follow" />
-    <meta name="keywords" content="lorem, ipsum, dolor, sit, amet" />
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="/src/css/style.css" />
-    <script defer src="/src/js/main.js"></script>
-  </head>
-  <body>
-    <header class="header">
-      <a href="index.html" class="header__logo"
-        ><img src="/src/assets/icons/logo.svg" alt=""
-      /></a>
-      <nav class="nav" id="nav" aria-expanded="false">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="nav__right-col">
-        <button>
-          <img src="/src/assets/icons/search-icon.svg" alt="search icon" />
-        </button>
-        <button
-          class="ham-btn"
-          aria-label="ham button"
-          data-active="false"
-          tabindex="0"
-          aria-controls="nav"
-        >
-          <div class="ham-line"></div>
-          <div class="ham-line"></div>
-          <div class="ham-line"></div>
-        </button>
-      </div>
-    </header>
-    <main class="main">
-      <!-- hero section -->
-      <section class="hero">
-        <!-- Swiper -->
-        <div class="swiper hero-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="/src/assets/images/hero-img-1.jpg" aria-hidden="true" />
-            </div>
-            <div class="swiper-slide">
-              <img src="/src/assets/images/hero-img-2.jpg" aria-hidden="true" />
-            </div>
-            <div class="swiper-slide">
-              <img src="/src/assets/images/hero-img-3.jpg" aria-hidden="true" />
-            </div>
-            <div class="swiper-slide">
-              <img src="/src/assets/images/hero-img-4.jpg" aria-hidden="true" />
-            </div>
-            <div class="swiper-slide">
-              <img src="/src/assets/images/hero-img-5.jpg" aria-hidden="true" />
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="hero__content-box">
-            <p class="hero__subheadline-upper">kuća za odmor</p>
-            <h1 class="hero__headline">kuzmanovi dvori</h1>
-            <p class="hero__subheadline">
-              Doživite raskoš tradicije u vili "Kuzmanovi dvori" – gdje prošlost
-              susreće suvremenost.
-            </p>
-            <a href="#" class="hero__cta" role="button"
-              >istraži kuzmanove dvore
-              <div class="cta-slide"></div>
 
-              <img
-                src="/src/assets/icons/cta-arrow-right.svg"
-                aria-hidden="true"
-            /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet." />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="lorem, ipsum, dolor, sit, amet" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/src/css/style.css" />
+  <script defer src="/src/js/main.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="header__logo"><img src="/src/assets/icons/logo.svg" alt="" /></a>
+    <nav class="nav" id="nav" aria-expanded="false">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link">O dvorima</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Kuzmanovi dvori</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Galerija</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Recenzije</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="nav__right-col">
+      <button>
+        <img src="/src/assets/icons/search-icon.svg" alt="search icon" />
+      </button>
+      <button class="ham-btn" aria-label="ham button" data-active="false" tabindex="0" aria-controls="nav">
+        <div class="ham-line"></div>
+        <div class="ham-line"></div>
+        <div class="ham-line"></div>
+      </button>
+    </div>
+  </header>
+  <main class="main">
+    <!-- hero section -->
+    <section class="hero">
+      <!-- Swiper -->
+      <div class="swiper hero-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/src/assets/images/hero-img-1.jpg" aria-hidden="true" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/src/assets/images/hero-img-2.jpg" aria-hidden="true" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/src/assets/images/hero-img-3.jpg" aria-hidden="true" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/src/assets/images/hero-img-4.jpg" aria-hidden="true" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/src/assets/images/hero-img-5.jpg" aria-hidden="true" />
           </div>
         </div>
-        <a href="#" class="scroll-down-btn">
-          <img
-            src="/src/assets/icons/scroll-down-icon.svg"
-            alt="scroll down btn"
-        /></a>
-      </section>
-      <!-- dvori section -->
-      <section class="dvori">
-        <div class="container">
-          <div class="dvori-row">
-            <img src="/src/assets/images/dvori-imgs.png" alt="dvori image" />
-          </div>
-          <div class="dvori-row">
-            <h2 class="h2-heading">O dvorima</h2>
-            <p class="paragraph dark-text">
-              Stara šokačka kuća sa "četiri pendžera od druma" potpuno je
-              obnovljena u raskošnu vilu "Kuzmanovi dvori". Ova stogodišnja
-              ljepotica još uvijek gizdavo stoji i resi svoj šor. Kuća je
-              zadržala je svoj izvorni vanjski izgled, a unutrašnjost je
-              prilagođena potrebama suvremenog čovjeka. Uz moderne i udobne
-              ležajeve, interijer krase izvorni komadi namještaja iz obiteljskog
-              nasljeđa te unikatni, masivni i ručno rađeni elementi.  Osjetite
-              dašak prošlosti. Uživajte u raskoši molovanih zidova i mirisu
-              stare hrastovine. Uživajte u pogledu kroz pendžer i u šetnji
-              avlijom i drumom. Odmorite duh i tijelo u prostoru koje zove na
-              predah od svakodnevice. Dođite u Štitar i doživite Slavoniju,
-              šokadiju, u punoj njenoj raskoši i u svom komforu koji vam je za
-              odmor potreban. Bit ćete nam dragi gosti.
+      </div>
+      <div class="container">
+        <div class="hero__content-box">
+          <p class="hero__subheadline-upper">kuća za odmor</p>
+          <h1 class="hero__headline">kuzmanovi dvori</h1>
+          <p class="hero__subheadline">
+            Doživite raskoš tradicije u vili "Kuzmanovi dvori" – gdje prošlost
+            susreće suvremenost.
+          </p>
+          <a href="#" class="hero__cta" role="button">istraži kuzmanove dvore
+            <div class="cta-slide"></div>
+
+            <img src="/src/assets/icons/cta-arrow-right.svg" aria-hidden="true" />
+          </a>
+        </div>
+      </div>
+      <a href="#" class="scroll-down-btn">
+        <img src="/src/assets/icons/scroll-down-icon.svg" alt="scroll down btn" /></a>
+    </section>
+    <!-- dvori section -->
+    <section class="dvori">
+      <div class="container">
+        <div class="dvori-row">
+          <img src="/src/assets/images/dvori-imgs.png" alt="dvori image" />
+        </div>
+        <div class="dvori-row">
+          <h2 class="h2-heading">O dvorima</h2>
+          <p class="paragraph dark-text">
+            Stara šokačka kuća sa "četiri pendžera od druma" potpuno je
+            obnovljena u raskošnu vilu "Kuzmanovi dvori". Ova stogodišnja
+            ljepotica još uvijek gizdavo stoji i resi svoj šor. Kuća je
+            zadržala je svoj izvorni vanjski izgled, a unutrašnjost je
+            prilagođena potrebama suvremenog čovjeka. Uz moderne i udobne
+            ležajeve, interijer krase izvorni komadi namještaja iz obiteljskog
+            nasljeđa te unikatni, masivni i ručno rađeni elementi.  Osjetite
+            dašak prošlosti. Uživajte u raskoši molovanih zidova i mirisu
+            stare hrastovine. Uživajte u pogledu kroz pendžer i u šetnji
+            avlijom i drumom. Odmorite duh i tijelo u prostoru koje zove na
+            predah od svakodnevice. Dođite u Štitar i doživite Slavoniju,
+            šokadiju, u punoj njenoj raskoši i u svom komforu koji vam je za
+            odmor potreban. Bit ćete nam dragi gosti.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ponuda section -->
+    <section class="ponuda">
+      <div class="container">
+        <h2 class="h2-heading ponuda__heading ornament-heading">
+          Kuzmanovi dvori
+        </h2>
+        <div class="ponuda__wrapper">
+          <article class="ponuda__article">
+            <p class="paragraph">
+              Ovo nezaboravno iskustvo možete doživjeti samo u Štitaru.
+              Ušoreno slavonsko selo, krivudava rijeka Sava, hladovina
+              hrastove šume, bogatstvo slavonskog polja. Sve to na dobro
+              osmišljenoj ruti, sa vještim kočijašem.
+            </p>
+            <br /><br />
+            <p class="paragraph">
+              U dvorištu se možete opustiti na natkrivenoj terasi sa
+              hidromasažnim bazenom, uživati pod ljetnim paviljonom, a za
+              najmlađe tu je dječje igralište. Po dogovoru možemo za Vas
+              organizirati vožnju konjima i fijakerom.
+            </p>
+            <br /><br />
+            <p class="paragraph">
+              Dvori se sastoje od dvije spavaće sobe, velikog dnevnog boravka
+              s blagovaonicom, kuhinjom i kupaonicom, te predsobljem i velikom
+              terasom s koje se proteže pogled na uređeno dvorište s izvornom
+              arhitekturom.
+            </p>
+            <br /><br />
+            <p class="paragraph">
+              Stara šokačka kuća sa"četiri penđera od druma" potpuno je
+              obnovljena u raskošnu vilu "Kuzmanovi dvori".
+            </p>
+          </article>
+          <img src="/src/assets/images/ponuda-img-1.png" alt="kuzmanovi dvori" class="ponuda__img" />
+        </div>
+      </div>
+      <div class="ponuda__wrapper ponuda__wrapper--second">
+        <img src="/src/assets/images/ponuda-gallery-img.png" alt="gallery" class="gallery-block-image" />
+        <a href="#" class="gallery-btn">odi na galeriju
+          <img src="/src/assets/images/btn-img-ghallery.png" alt="btn gallery" /></a>
+      </div>
+      <div class="ponuda__wrapper container">
+        <h3 class="h3-heading ornament-small-heading ponuda-h3-heading">
+          Što sve nudimo
+        </h3>
+        <div class="ponuda__info">
+          <div class="ponuda__info-row">
+            <img src="/src/assets/icons/offer-bad-icon.svg" alt="bad" />
+            <p class="ponuda-paragraph">
+              Noćenje za do 6 osoba sa slavonskim doručkom.
             </p>
           </div>
-        </div>
-      </section>
-      <!-- ponuda section -->
-      <section class="ponuda">
-        <div class="container">
-          <h2 class="h2-heading ponuda__heading ornament-heading">
-            Kuzmanovi dvori
-          </h2>
-          <div class="ponuda__wrapper">
-            <article class="ponuda__article">
-              <p class="paragraph">
-                Ovo nezaboravno iskustvo možete doživjeti samo u Štitaru.
-                Ušoreno slavonsko selo, krivudava rijeka Sava, hladovina
-                hrastove šume, bogatstvo slavonskog polja. Sve to na dobro
-                osmišljenoj ruti, sa vještim kočijašem.
+          <div class="ponuda__separator"></div>
+          <div class="ponuda__info-rows-big-wrapper">
+            <div class="ponuda__info-rows-wrapper">
+              <div class="ponuda__info-row">
+                <img src="/src/assets/icons/offer-pool-icon.svg" alt="pool" />
+                <p class="ponuda-paragraph">Hidromasažni bazen</p>
+              </div>
+              <div class="ponuda__info-row">
+                <img src="/src/assets/icons/offer-sauna-icon.svg" alt="sauna" />
+                <p class="ponuda-paragraph">Infracrvena sauna</p>
+              </div>
+              <div class="ponuda__info-row">
+                <img src="/src/assets/icons/offer-playground-icon.svg" alt="playground" />
+                <p class="ponuda-paragraph">Dječje igralište</p>
+              </div>
+            </div>
+            <div class="ponuda__info-rows-wrapper">
+              <div class="ponuda__info-row">
+                <img src="/src/assets/icons/offer-bike-icon.svg" alt="playground" />
+                <p class="ponuda-paragraph">Bicikli</p>
+              </div>
+              <div class="ponuda__info-row">
+                <img src="/src/assets/icons/offer-grill-icon.svg" alt="playground" />
+                <p class="ponuda-paragraph">Roštilj</p>
+              </div>
+            </div>
+          </div>
+          </div>
+          <h4 class="h4-heading more-info-h4-heading">Dodatni opis</h4>
+          <div class="more-info__wrapper">
+            <div class="more-info__inner-wrapper">
+              <span class="info-row-heading">Plaćanje i napomene</span>
+              <div>
+                <p class="more-info-paragraph">Plaćanje po dolasku u apartman, uz akontaciju po dogovoru</p>
+                <div class="more-info__row">
+                  <p class="more-info-paragraph">Boravišna pristojba je uključena u cijenu.</p>
+                  <img src="/src/assets/icons/little-checkmark-icon.svg" alt="checkmark">
+                </div>
+              </div>
+            </div>
+            <div class="more-info__inner-wrapper">
+              <span class="info-row-heading">Politika otkazivanja</span>
+              <div>
+                <p class="more-info-paragraph">Ne vršimo povrat akontacije.</p>
+              </div>
+            </div>
+            <div class="more-info__inner-wrapper">
+              <span class="info-row-heading">Udaljenost od objekta</span>
+              <div class="udaljenost-wrapper">
+                <div class="udaljenost-inner-wrapper">
+                  <div class="udaljenost-row">
+                    <div>
+                      <img class="icon" src="/src/assets/icons/centar-icon.svg" alt="icon">
+                      <span>Centar</span>
+                    </div>
+                    <span class="info-udaljenost-num">100m</span>
+                  </div>
+                  <div class="udaljenost-row">
+                    <div>
+                      <img class="icon" src="/src/assets/icons/doktor-icon.svg" alt="icon">
+                      <span>Doktor</span>
+                    </div>
+                    <span class="info-udaljenost-num">50m</span>
+                  </div>
+                  <div class="udaljenost-row">
+                    <div>
+                      <img class="icon" src="/src/assets/icons/pošta-icon.svg" alt="icon">
+                      <span>Pošta</span>
+                    </div>
+                    <span class="info-udaljenost-num">300m</span>
+                  </div>
+                </div>
+                <div class="udaljenost-inner-wrapper">
+                  <div class="udaljenost-row">
+                    <div>
+                      <img class="icon" src="/src/assets/icons/trgovina-icon.svg" alt="icon">
+                      <span>Trgovina</span>
+                    </div>
+                    <span class="info-udaljenost-num">100m</span>
+                  </div>
+                  <div class="udaljenost-row">
+                    <div>
+                      <img class="icon" src="/src/assets/icons/ljekarna-icon.svg" alt="icon">
+                      <span>Ljekarna</span>
+                    </div>
+                    <span class="info-udaljenost-num">5km</span>
+                  </div>
+                  <div class="udaljenost-row">
+                    <div>
+                      <img class="icon" src="/src/assets/icons/benzinska-icon.svg" alt="icon">
+                      <span>Benzinska crpka</span>
+                    </div>
+                    <span class="info-udaljenost-num">5km</span>
+                  </div>
+                </div>
+                <div class="udaljenost-inner-wrapper">
+                  <div class="udaljenost-row">
+                    <div>
+                      <img class="icon" src="/src/assets/icons/restoran-icon.svg" alt="icon">
+                      <span>Restoran</span>
+                    </div>
+                    <span class="info-udaljenost-num">200m</span>
+                  </div>
+                  <div class="udaljenost-row">
+                    <div>
+                      <img class="icon" src="/src/assets/icons/banka-icon.svg" alt="icon">
+                      <span>Banka</span>
+                    </div>
+                    <span class="info-udaljenost-num">5km</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- blog-feed section -->
+    <section class="blog-feed">
+      <h2 class="h2-heading blog-feed-heading dark-text dark-ornament-heading">Blog</h2>
+      <div class="blog-feed__inner-wrapper container">
+        <article class="blog-card">
+          <figure class="blog-card__thumbnail-wrapper">
+            <img src="/src/assets/images/blog-cover-img.jpg" alt="blog image">
+          </figure>
+          <div class="blog-card__content">
+            <h3 class="h3-heading blog-card-h3-heading">Naslov teme</h3>
+            <div class="blog-card__inner-content">
+              <div class="blog-card__date">
+                <img class="icon" src="/src/assets/icons/blog-date-icon.svg" alt="date icon">
+                <div class="date">01.07.2024.</div>
+              </div>
+              <p class="blog-card__paragraph">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet adipisci exercitationem, ipsam tenetur
+                cum labore id ad sunt.
               </p>
-              <br /><br />
-              <p class="paragraph">
-                U dvorištu se možete opustiti na natkrivenoj terasi sa
-                hidromasažnim bazenom, uživati pod ljetnim paviljonom, a za
-                najmlađe tu je dječje igralište. Po dogovoru možemo za Vas
-                organizirati vožnju konjima i fijakerom.
-              </p>
-              <br /><br />
-              <p class="paragraph">
-                Dvori se sastoje od dvije spavaće sobe, velikog dnevnog boravka
-                s blagovaonicom, kuhinjom i kupaonicom, te predsobljem i velikom
-                terasom s koje se proteže pogled na uređeno dvorište s izvornom
-                arhitekturom.
-              </p>
-              <br /><br />
-              <p class="paragraph">
-                Stara šokačka kuća sa"četiri penđera od druma" potpuno je
-                obnovljena u raskošnu vilu "Kuzmanovi dvori".
-              </p>
+              <a href="#" class="read-more-link">Pročitaj Više...</a>
+            </div>
+          </div>
+        </article>
+        <a href="#" class="see-more-blogs-btn">Istraži cijeli blog <img src="/src/assets/icons/arrow-right-icon.svg"
+            alt="arrow right"></a>
+      </div>
+    </section>
+    <!-- recenzije section -->
+    <section class="recenzije">
+      <h2 class="h2-heading recenzije-h2-heading dark-ornament-heading">Recenzije</h2>
+      <div class="recenzije__wrapper container">
+        <!-- Swiper -->
+        <div class="swiper recenzija-swiper ">
+          <div class="swiper-wrapper ">
+            <article class="recenzija-card swiper-slide">
+              <p class="paragraph">Kuća je top uređena, a domaćini su uslužni i sve se može dogovoriti. Ako nas put opet
+                odvede u Slavoniju, svakako ćemo opet noćiti u Kuzmanovim dvorima!</p>
+              <h3 class="h3-heading">Ivana Mateša</h3>
             </article>
-            <img
-              src="/src/assets/images/ponuda-img-1.png"
-              alt="kuzmanovi dvori"
-              class="ponuda__img"
-            />
-          </div>
-        </div>
-        <div class="ponuda__wrapper ponuda__wrapper--second">
-          <img
-            src="/src/assets/images/ponuda-gallery-img.png"
-            alt="gallery"
-            class="gallery-block-image"
-          />
-          <a href="#" class="gallery-btn"
-            >odi na galeriju
-            <img
-              src="/src/assets/images/btn-img-ghallery.png"
-              alt="btn gallery"
-          /></a>
-        </div>
-        <div class="ponuda__wrapper container">
-          <h3 class="h3-heading ornament-small-heading ponuda-h3-heading">
-            Što sve nudimo
-          </h3>
-          <div class="ponuda__info">
-            <div class="ponuda__info-row">
-              <img src="/src/assets/icons/offer-bad-icon.svg" alt="bad" />
-              <p class="ponuda-paragraph">
-                Noćenje za do 6 osoba sa slavonskim doručkom.
+            <article class="recenzija-card swiper-slide">
+              <p class="paragraph">We arrived on January 1st after a 9-hour drive and in need of a break for the night.
+                We gave a call couple of hours before to check if they could accommodate us. The owners were kind enough
+                to welcome us, light a fire and warm the house for our arrival. Since everything was closed that day,
+                they even prepared us dinner. Truly kind people. Thank you.
               </p>
-            </div>
-            <div class="ponuda__separator"></div>
-            <div class="ponuda__info-rows-big-wrapper">
-              <div class="ponuda__info-rows-wrapper">
-                <div class="ponuda__info-row">
-                  <img src="/src/assets/icons/offer-pool-icon.svg" alt="pool" />
-                  <p class="ponuda-paragraph">Hidromasažni bazen</p>
-                </div>
-                <div class="ponuda__info-row">
-                  <img src="/src/assets/icons/offer-sauna-icon.svg" alt="sauna" />
-                  <p class="ponuda-paragraph">Infracrvena sauna</p>
-                </div>
-                <div class="ponuda__info-row">
-                  <img
-                    src="/src/assets/icons/offer-playground-icon.svg"
-                    alt="playground"
-                  />
-                  <p class="ponuda-paragraph">Dječje igralište</p>
-                </div>
-              </div>
-              <div class="ponuda__info-rows-wrapper">
-                <div class="ponuda__info-row">
-                  <img
-                    src="/src/assets/icons/offer-bike-icon.svg"
-                    alt="playground"
-                  />
-                  <p class="ponuda-paragraph">Bicikli</p>
-                </div>
-                <div class="ponuda__info-row">
-                  <img
-                    src="/src/assets/icons/offer-grill-icon.svg"
-                    alt="playground"
-                  />
-                  <p class="ponuda-paragraph">Roštilj</p>
-                </div>
-              </div>
-            </div>
-            <h4 class="h4-heading more-info-h4-heading">Dodatni opis</h4>
-            <div class="more-info__wrapper">
-              <div class="more-info__inner-wrapper">
-                <span class="info-row-heading">Plaćanje i napomene</span>
-                <div>
-                  <p class="more-info-paragraph">Plaćanje po dolasku u apartman, uz akontaciju po dogovoru</p>
-                  <div class="more-info__row">
-                    <p class="more-info-paragraph">Boravišna pristojba je uključena u cijenu.</p>
-                    <img src="/src/assets/icons/little-checkmark-icon.svg" alt="checkmark">
-                  </div>
-                </div>
-              </div>
-              <div class="more-info__inner-wrapper">
-                <span class="info-row-heading">Politika otkazivanja</span>
-                <div>
-                  <p class="more-info-paragraph">Ne vršimo povrat akontacije.</p>
-                </div>
-              </div>
-              <div class="more-info__inner-wrapper">
-                <span class="info-row-heading">Udaljenost od objekta</span>
-                <div class="udaljenost-wrapper">
-                  <div class="udaljenost-inner-wrapper">
-                    <div class="udaljenost-row">
-                      <div>
-                        <img class="icon" src="/src/assets/icons/centar-icon.svg" alt="icon"> 
-                        <span>Centar</span>
-                      </div>
-                      <span class="info-udaljenost-num">100m</span>
-                    </div>
-                    <div class="udaljenost-row">
-                      <div>
-                        <img class="icon" src="/src/assets/icons/doktor-icon.svg" alt="icon"> 
-                        <span>Doktor</span>
-                      </div>
-                      <span class="info-udaljenost-num">50m</span>
-                    </div>
-                    <div class="udaljenost-row">
-                      <div>
-                        <img class="icon" src="/src/assets/icons/pošta-icon.svg" alt="icon"> 
-                        <span>Pošta</span>
-                      </div>
-                      <span class="info-udaljenost-num">300m</span>
-                    </div>
-                  </div>
-                  <div class="udaljenost-inner-wrapper">
-                    <div class="udaljenost-row">
-                      <div>
-                        <img class="icon" src="/src/assets/icons/trgovina-icon.svg" alt="icon"> 
-                        <span>Trgovina</span>
-                      </div>
-                      <span class="info-udaljenost-num">100m</span>
-                    </div>
-                    <div class="udaljenost-row">
-                      <div>
-                        <img class="icon" src="/src/assets/icons/ljekarna-icon.svg" alt="icon"> 
-                        <span>Ljekarna</span>
-                      </div>
-                      <span class="info-udaljenost-num">5km</span>
-                    </div>
-                    <div class="udaljenost-row">
-                      <div>
-                        <img class="icon" src="/src/assets/icons/benzinska-icon.svg" alt="icon"> 
-                        <span>Benzinska crpka</span>
-                      </div>
-                      <span class="info-udaljenost-num">5km</span>
-                    </div>
-                  </div>
-                  <div class="udaljenost-inner-wrapper">
-                    <div class="udaljenost-row">
-                      <div>
-                        <img class="icon" src="/src/assets/icons/restoran-icon.svg" alt="icon"> 
-                        <span>Restoran</span>
-                      </div>
-                      <span class="info-udaljenost-num">200m</span>
-                    </div>
-                    <div class="udaljenost-row">
-                      <div>
-                        <img class="icon" src="/src/assets/icons/banka-icon.svg" alt="icon"> 
-                        <span>Banka</span>
-                      </div>
-                      <span class="info-udaljenost-num">5km</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-      </section>
-      <!-- blog-feed section -->
-       <section class="blog-feed">
-          <div class="blog-feed__wrapper">
-            <h2 class="h2-heading blog-feed-heading  dark-text">Blog</h2>
+              <h3 class="h3-heading">Boryana Stamenova</h3>
+            </article>
+            <article class="recenzija-card swiper-slide">
+              <p class="paragraph">Kuća je top uređena, a domaćini su uslužni i sve se može dogovoriti. Ako nas put opet
+                odvede u Slavoniju, svakako ćemo opet noćiti u Kuzmanovim dvorima!</p>
+              <h3 class="h3-heading">Ivana Mateša</h3>
+            </article>
+            <article class="recenzija-card swiper-slide">
+              <p class="paragraph">We arrived on January 1st after a 9-hour drive and in need of a break for the night.
+                We gave a call couple of hours before to check if they could accommodate us. The owners were kind enough
+                to welcome us, light a fire and warm the house for our arrival. Since everything was closed that day,
+                they even prepared us dinner. Truly kind people. Thank you.
+              </p>
+              <h3 class="h3-heading">Boryana Stamenova</h3>
+            </article>
+            <article class="recenzija-card swiper-slide">
+              <p class="paragraph">Kuća je top uređena, a domaćini su uslužni i sve se može dogovoriti. Ako nas put opet
+                odvede u Slavoniju, svakako ćemo opet noćiti u Kuzmanovim dvorima!</p>
+              <h3 class="h3-heading">Ivana Mateša</h3>
+            </article>
+            <article class="recenzija-card swiper-slide">
+              <p class="paragraph">We arrived on January 1st after a 9-hour drive and in need of a break for the night.
+                We gave a call couple of hours before to check if they could accommodate us. The owners were kind enough
+                to welcome us, light a fire and warm the house for our arrival. Since everything was closed that day,
+                they even prepared us dinner. Truly kind people. Thank you.
+              </p>
+              <h3 class="h3-heading">Boryana Stamenova</h3>
+            </article>
           </div>
-       </section>
-    </main>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  </body>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section -->
+    <section class="contact">
+      <div class="container">
+        <div class="contact__outter-wrapper">
+          <div class="contact__wrapper">
+            <h2 class="h2-heading contact-h2-heading">Kontaktirajte nas</h2>
+            <div class="contact__content-wrapper">
+              <p class="paragraph">Provjerite raspolozivot, rezervirajte termin i ostavirite kominikaciju s nama.</p>
+              <div class="contact__call-action-wrapper">
+                <div class="contact__call-action">
+                  <a href="#" class="call-btn"><img src="/src/assets/icons/phone-contact-icon.svg" alt="phone icon"></a>
+                  <span>Stjepan: +385915378947</span>
+                </div>
+                <div class="contact__call-action">
+                  <a href="#" class="call-btn"><img src="/src/assets/icons/phone-contact-icon.svg" alt="phone icon"></a>
+                  <span>Marija: +385989655260</span>
+                </div>
+              </div>
+            </div>
+            <div class="contact__content-wrapper">
+              <p class="paragraph">Ukoliko želite kontakt mailom, možete to uciniti klikom na gumb ispod.</p>
+              <div class="contact__call-action">
+                <a href="#" class="call-btn call-btn--gmail"><img src="/src/assets/icons/gmail-contact-icon.svg" alt="gmail icon"></a>
+                <span>kuzmanovi.dvori@gmail.com</span>
+              </div>
+            </div>
+          </div>
+          <img src="/src/assets/images/heading-ornament.svg" alt="white ornament">
+          <div class="contact__wrapper">
+            <h2 class="h2-heading contact-h2-heading">Gdje se nalazimo</h2>
+            <div class="contact__location-wrapper">
+              <p class="paragraph">Da biste lakse dosli do nas, posluzite se google kartama.</p>
+              <span class="contact__address"><img class="icon" src="/src/assets/icons/location-icon.svg" alt="location"><address class="paragraph--serif-font">Školska 13, Štitar, Vukovarsko-srijemska županija, Hrvatska</address></span>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2816.5551020282346!2d18.634748677515912!3d45.09481427107017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475c42821eae7ea7%3A0xd03c314fc2939080!2zxaBrb2xza2EgdWwuIDEzLCAzMjI3NCwgxaB0aXRhcg!5e0!3m2!1sen!2shr!4v1720700793497!5m2!1sen!2shr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="google-map"></iframe>
+            <span class="contact__address"><img class="icon" src="/src/assets/icons/restaurant-icon.svg" alt="restaurant"><p class="paragraph paragraph--serif-font">restoran “Rustica” se nalazi na 200m od nas.</p></span>
+          </div>
+        </div>
+      </div>
+      <img class="contact__13-overlay" src="/src/assets/images/contact-overlay-13.jpg" aria-hidden="true">
+    </section>
+  </main>
+  <footer class="footer">
+    <img src="/src/assets/icons/logo.svg" class="footer__logo" alt="footer logo">
+    <nav class="footer__logo">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">O dvorima</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Kuzmanovi dvori</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Galerija</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Recenzije</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="footer__socials">
+      <a href="#"><img src="/src/assets/icons/fb-icon.svg" alt="facebook icon"></a>
+      <a href="#"><img src="/src/assets/icons/gmail-icon.svg" alt="gmail icon"></a>
+      <a href="#"><img src="/src/assets/icons/instagram-icon.svg" alt="instagram icon"></a>
+    </div>
+    <div class="copyright">
+      <p>Copyright © 2024 - All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
 </html>

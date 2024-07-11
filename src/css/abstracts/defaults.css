@@ -34,7 +34,11 @@ section {
   position: relative;
   padding-block: 6rem;
 }
-
+address {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 7px;

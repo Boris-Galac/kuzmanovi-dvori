@@ -21,7 +21,7 @@ h2 {
 }
 .h2-heading {
   color: var(--dark);
-  font-size: 4rem;
+  font-size: clamp(3rem, 7vw, 4rem);
   margin-bottom: 2rem;
 }
 .h3-heading {
@@ -75,4 +75,61 @@ h2 {
 }
 .more-info-h4-heading {
   margin-bottom: 2rem;
+}
+.blog-feed-heading {
+  position: relative;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+.blog-card-h3-heading {
+  color: var(--dark);
+}
+.date {
+  font-size: 22px;
+  font-weight: 700;
+}
+.blog-card__paragraph {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.read-more-link {
+  font-size: 20px;
+  font-weight: 500;
+}
+.recenzije-h2-heading {
+  position: relative;
+  text-align: center;
+}
+.contact-h2-heading {
+  position: relative;
+  line-height: 79%;
+  isolation: isolate;
+  color: var(--white);
+}
+.contact-h2-heading::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: var(--white);
+  width: 7rem;
+  display: block;
+  z-index: -1;
+  bottom: -15px;
+  left: 0;
+}
+.contact .paragraph {
+  line-height: normal;
+}
+.paragraph--serif-font {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+@media (min-width: 1200px) {
+  .hero__subheadline-upper {
+    font-size: 32px;
+  }
+  .ponuda__heading {
+    margin-bottom: 10rem;
+  }
 }
