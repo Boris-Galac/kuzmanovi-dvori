@@ -29,6 +29,9 @@ var swiper = new Swiper(".hero-slider", {
 
 var swiper = new Swiper(".recenzija-swiper", {
   spaceBetween: 30,
+  autoplay: true,
+  speed: 1000,
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
