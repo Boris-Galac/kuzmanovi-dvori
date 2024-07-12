@@ -94,3 +94,43 @@ window.addEventListener("scroll", (e) => {
 if (document.querySelector(".main").classList.contains("main--gallery")) {
   baguetteBox.run(".gallery");
 }
+
+///////// INTERSECTION OBSERVER
+
+// from left stagger
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      }
+      //  else {
+      //   entry.target.classList.remove("active");
+      // }
+    });
+  },
+  { threshold: 0.2 }
+);
+// left
+const left = document.querySelectorAll(".hidden-left");
+left.forEach((el) => observer.observe(el));
+// right
+const right = document.querySelectorAll(".hidden-right");
+right.forEach((el) => observer.observe(el));
+// bottom
+const fade = document.querySelectorAll(".hidden-fade");
+fade.forEach((el) => observer.observe(el));
+
+//// BACK TO TOP
+
+backToTopbtn.addEventListener("click", (e) => {
+  window.scroll({
+    top: 0,
+  });
+});
+window.addEventListener("scroll", (e) => {
+  if (window.scrollY > 150) {
+    backToTopbtn.setAttribute("data-visible", "true");
+  } else backToTopbtn.setAttribute("data-visible", "false");
+});

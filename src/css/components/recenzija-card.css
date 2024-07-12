@@ -23,3 +23,9 @@
   bottom: 5rem;
   z-index: -1;
 }
+.recenzija-card span {
+  border: 1px solid #7373dd;
+  padding: 5px;
+  border-radius: 100vmax;
+  width: max-content;
+}

@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Website</title>
-  <meta name="description" content="Lorem ipsum dolor sit amet." />
+  <title>Kuzmanovi dvori</title>
+  <meta name="description" content="Stara šokačka kuća sa 'četiri pendžera od druma' potpuno je obnovljena u raskošnu vilu 'Kuzmanovi dvori'. Ova stogodišnja ljepotica još uvijek gizdavo stoji i resi svoj šor. Kuća je zadržala je svoj izvorni vanjski izgled, a unutrašnjost je prilagođena potrebama suvremenog čovjeka.'' />
   <meta name="robots" content="index, follow" />
-  <meta name="keywords" content="lorem, ipsum, dolor, sit, amet" />
+  <meta name="keywords" content="Kuzmanovi dvori, kuća za odmor, turizam, slavonija, štitar, odmor" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/src/css/style.css" />
   <script defer src="/src/js/main.js"></script>
 </head>
-
 <body>
   <header class="header">
     <a href="index.html" class="header__logo"><img src="/src/assets/icons/logo.svg" alt="" /></a>
@@ -61,9 +60,9 @@
       </div>
       <div class="container">
         <div class="hero__content-box">
-          <p class="hero__subheadline-upper">kuća za odmor</p>
-          <h1 class="hero__headline">kuzmanovi dvori</h1>
-          <p class="hero__subheadline">
+          <p class="hero__subheadline-upper hidden-right" style="animation-delay: 1s;">kuća za odmor</p>
+          <h1 class="hero__headline hidden-right" style="animation-delay: 1.5s;">kuzmanovi dvori</h1>
+          <p class="hero__subheadline hidden-right" style="animation-delay: 2s;">
             Doživite raskoš tradicije u vili "Kuzmanovi dvori" – gdje prošlost
             susreće suvremenost.
           </p>
@@ -80,10 +79,10 @@
     <!-- dvori section -->
     <section class="dvori" id="dvori">
       <div class="container">
-        <div class="dvori-row">
+        <div class="dvori-row hidden-left">
           <img src="/src/assets/images/dvori-imgs.png" alt="dvori image" />
         </div>
-        <div class="dvori-row">
+        <div class="dvori-row hidden-right">
           <h2 class="h2-heading">O dvorima</h2>
           <p class="paragraph dark-text">
             Stara šokačka kuća sa "četiri pendžera od druma" potpuno je
@@ -110,7 +109,7 @@
           Kuzmanovi dvori
         </h2>
         <div class="ponuda__wrapper">
-          <article class="ponuda__article">
+          <article class="ponuda__article hidden-left">
             <p class="paragraph">
               Ovo nezaboravno iskustvo možete doživjeti samo u Štitaru.
               Ušoreno slavonsko selo, krivudava rijeka Sava, hladovina
@@ -137,10 +136,10 @@
               obnovljena u raskošnu vilu "Kuzmanovi dvori".
             </p>
           </article>
-          <img src="/src/assets/images/ponuda-img-1.png" alt="kuzmanovi dvori" class="ponuda__img" />
+          <img src="/src/assets/images/ponuda-img-1.png" alt="kuzmanovi dvori" class="ponuda__img hidden-right" />
         </div>
       </div>
-      <div class="ponuda__wrapper ponuda__wrapper--second">
+      <div class="ponuda__wrapper ponuda__wrapper--second hidden-fade">
         <img src="/src/assets/images/ponuda-gallery-img.png" alt="gallery" class="gallery-block-image" />
         <a href="gallery.html" class="gallery-btn">odi na galeriju
           <img src="/src/assets/images/btn-img-ghallery.png" alt="btn gallery" /></a>
@@ -150,7 +149,7 @@
           Što sve nudimo
         </h3>
         <div class="ponuda__info">
-          <div class="ponuda__info-row">
+          <div class="ponuda__info-row hidden-left">
             <img src="/src/assets/icons/offer-bad-icon.svg" alt="bad" />
             <p class="ponuda-paragraph">
               Noćenje za do 6 osoba sa slavonskim doručkom.
@@ -159,25 +158,25 @@
           <div class="ponuda__separator"></div>
           <div class="ponuda__info-rows-big-wrapper">
             <div class="ponuda__info-rows-wrapper">
-              <div class="ponuda__info-row">
+              <div class="ponuda__info-row hidden-left" style="animation-delay: .1s;">
                 <img src="/src/assets/icons/offer-pool-icon.svg" alt="pool" />
                 <p class="ponuda-paragraph">Hidromasažni bazen</p>
               </div>
-              <div class="ponuda__info-row">
+              <div class="ponuda__info-row hidden-left" style="animation-delay: .2s;">
                 <img src="/src/assets/icons/offer-sauna-icon.svg" alt="sauna" />
                 <p class="ponuda-paragraph">Infracrvena sauna</p>
               </div>
-              <div class="ponuda__info-row">
+              <div class="ponuda__info-row hidden-left" style="animation-delay: .3s;">
                 <img src="/src/assets/icons/offer-playground-icon.svg" alt="playground" />
                 <p class="ponuda-paragraph">Dječje igralište</p>
               </div>
             </div>
             <div class="ponuda__info-rows-wrapper">
-              <div class="ponuda__info-row">
+              <div class="ponuda__info-row hidden-left" style="animation-delay: .4s;">
                 <img src="/src/assets/icons/offer-bike-icon.svg" alt="playground" />
                 <p class="ponuda-paragraph">Bicikli</p>
               </div>
-              <div class="ponuda__info-row">
+              <div class="ponuda__info-row hidden-left" style="animation-delay: .5s;">
                 <img src="/src/assets/icons/offer-grill-icon.svg" alt="playground" />
                 <p class="ponuda-paragraph">Roštilj</p>
               </div>
@@ -308,7 +307,10 @@
             <article class="recenzija-card swiper-slide">
               <p class="paragraph">Kuća je top uređena, a domaćini su uslužni i sve se može dogovoriti. Ako nas put opet
                 odvede u Slavoniju, svakako ćemo opet noćiti u Kuzmanovim dvorima!</p>
-              <h3 class="h3-heading">Ivana Mateša</h3>
+                <div class="name">
+                  <span><img src="/src/assets/images/google-logo.png" alt="google"></span>
+                <h3 class="h3-heading">Ivana Mateša</h3>
+                </div>
             </article>
             <article class="recenzija-card swiper-slide">
               <p class="paragraph">We arrived on January 1st after a 9-hour drive and in need of a break for the night.
@@ -316,33 +318,59 @@
                 to welcome us, light a fire and warm the house for our arrival. Since everything was closed that day,
                 they even prepared us dinner. Truly kind people. Thank you.
               </p>
-              <h3 class="h3-heading">Boryana Stamenova</h3>
+              <div class="name">
+                <span><img src="/src/assets/images/google-logo.png" alt="google"></span>
+                <h3 class="h3-heading">Boryana Stamenova</h3>
+              </div>
             </article>
             <article class="recenzija-card swiper-slide">
-              <p class="paragraph">Kuća je top uređena, a domaćini su uslužni i sve se može dogovoriti. Ako nas put opet
-                odvede u Slavoniju, svakako ćemo opet noćiti u Kuzmanovim dvorima!</p>
-              <h3 class="h3-heading">Ivana Mateša</h3>
+              <p class="paragraph">We stayed the last weekend in Aug 2023. It was extremely hot(39°C) but we never felt the discomfort due to the air conditioning, which worked well. The hosts were very accommodating to any of our needs and even delivered an excellent slavonian breakfast to us every morning. Kuzumanovi dvori is a spacious, comfortable and clean home that I can highly recommend to anyone coming to the Županja area of Croatia.</p>
+              <div class="name">
+                <span><img src="/src/assets/images/google-logo.png" alt="google"></span>
+                <h3 class="h3-heading">Gina Anderson</h3>
+              </div>
             </article>
             <article class="recenzija-card swiper-slide">
-              <p class="paragraph">We arrived on January 1st after a 9-hour drive and in need of a break for the night.
-                We gave a call couple of hours before to check if they could accommodate us. The owners were kind enough
-                to welcome us, light a fire and warm the house for our arrival. Since everything was closed that day,
-                they even prepared us dinner. Truly kind people. Thank you.
+              <p class="paragraph">Sve pohvale vlasnicima na ovom malom raju. Kao prvi gosti u Kuzmanovim dvorima sa malom bebom imamo samo riječi pohvale za uređenje ,ekonomičnost,čistoću lokaciju i naravno domaćine! Topao doček i sve informacije bile su dostupne za jedan tren,vrhunski doručak bogat domaćim proizvodima.. Sam interijer je kompletno nov dok je jednim dijelom zadržao onu starinsku dušu baš kao što mi mlađi volimo. Veliki dnevni boravak i vatrica daju poseban ugođaj.. Imate naše preporuke ,a mi se sigurno vraćamo :)
               </p>
-              <h3 class="h3-heading">Boryana Stamenova</h3>
+              <div class="name">
+                <span><img src="/src/assets/images/google-logo.png" alt="google"></span>
+                <h3 class="h3-heading">Roko Pavlinušić</h3>
+              </div>
             </article>
             <article class="recenzija-card swiper-slide">
-              <p class="paragraph">Kuća je top uređena, a domaćini su uslužni i sve se može dogovoriti. Ako nas put opet
-                odvede u Slavoniju, svakako ćemo opet noćiti u Kuzmanovim dvorima!</p>
-              <h3 class="h3-heading">Ivana Mateša</h3>
+              <p class="paragraph">Čistoća ambijenta, Urednost, funkcionalnost i udobnost. Idealno mjesto za kratki i Duži odmor. Stogodišnji Kuzmanovi Dvori odražavaju Slavonski i Šokački duh, Mladi vlasnici su očito spojili tradiciju sa modernim stilom, da se sve generacije gostiju ugodno osjećaju. Posebno ističemo ljubaznost vlasnika.
+
+                Sve nas je oduševilo.</p>
+                <div class="name">
+                  <span><img src="/src/assets/images/booking-logo.png" alt="booking"></span>
+                  <h3 class="h3-heading">Buzov</h3>
+                </div>
             </article>
             <article class="recenzija-card swiper-slide">
-              <p class="paragraph">We arrived on January 1st after a 9-hour drive and in need of a break for the night.
-                We gave a call couple of hours before to check if they could accommodate us. The owners were kind enough
-                to welcome us, light a fire and warm the house for our arrival. Since everything was closed that day,
-                they even prepared us dinner. Truly kind people. Thank you.
+              <p class="paragraph">Ova mirna lokacija nalazi se u selu odmah pored autoceste, što je idealno za noćni odmor dok putujete. Objekt je vrlo prostran, čist i dobro održavan. Terasa s hidromasažnom kadom i sunčano dvorište idealni su za opuštanje. U obližnjem restoranu poslužuju se ukusna jela. Doručak je bio jako lijep, previše.
               </p>
-              <h3 class="h3-heading">Boryana Stamenova</h3>
+              <div class="name">
+                <span><img src="/src/assets/images/booking-logo.png" alt="booking"></span>
+                <h3 class="h3-heading">Lucie</h3>
+              </div>
+            </article>
+            <article class="recenzija-card swiper-slide">
+              <p class="paragraph">Ovaj vrlo čist, prostran i nedavno obnovljen objekt obuhvaća velik ograđeni vrt u kojem se gosti mogu igrati, opustiti ili koristiti opremu za roštilj. Sve raspoloživo, čak i za duži boravak. Vrlo topli i prijateljski domaćini koji pripremaju prekrasan doručak. Objekt "dvori" nalazi se u malom selu koje je zadržalo svoj karakter, na idealnoj lokaciji za one koji prolaze autocestom na putu prema jugu, na jednodnevnom izletu oko 800 km od Münchena i 60 km od granice sa Srbijom. Bili smo četvero odraslih s dva psa i uživali smo u boravku (također u restoranu Rustica, koji se nalazi iza ugla). Hvala vam na hrvatskom gostoprimstvu!
+
+              </p>
+              <div class="name">
+                <span><img src="/src/assets/images/booking-logo.png" alt="booking"></span>
+                <h3 class="h3-heading">Hans</h3>
+              </div>
+            </article>
+            <article class="recenzija-card swiper-slide">
+              <p class="paragraph">Prekrasna stara kuća na farmi, s ljubavlju obnovljena. Vrlo prostrana i dobro opremljena. Udobno. Parkiranje ispred kuće. Dobar doručak u vrtu. Na raspolaganju je jacuzzi za opuštanje. Vrlo prijateljski domaćica.
+              </p>
+              <div class="name">
+                <span><img src="/src/assets/images/booking-logo.png" alt="booking"></span>
+                <h3 class="h3-heading">Johannes</h3>
+              </div>
             </article>
           </div>
           <div class="swiper-pagination"></div>
@@ -359,11 +387,11 @@
               <p class="paragraph">Provjerite raspolozivot, rezervirajte termin i ostavirite kominikaciju s nama.</p>
               <div class="contact__call-action-wrapper">
                 <div class="contact__call-action">
-                  <a href="#" class="call-btn"><img src="/src/assets/icons/phone-contact-icon.svg" alt="phone icon"></a>
+                  <a href="tel:+385915378947" class="call-btn"><img src="/src/assets/icons/phone-contact-icon.svg" alt="phone icon"></a>
                   <span>Stjepan: +385915378947</span>
                 </div>
                 <div class="contact__call-action">
-                  <a href="#" class="call-btn"><img src="/src/assets/icons/phone-contact-icon.svg" alt="phone icon"></a>
+                  <a href="tel:+385989655260" class="call-btn"><img src="/src/assets/icons/phone-contact-icon.svg" alt="phone icon"></a>
                   <span>Marija: +385989655260</span>
                 </div>
               </div>
@@ -371,7 +399,7 @@
             <div class="contact__content-wrapper">
               <p class="paragraph">Ukoliko želite kontakt mailom, možete to uciniti klikom na gumb ispod.</p>
               <div class="contact__call-action">
-                <a href="#" class="call-btn call-btn--gmail"><img src="/src/assets/icons/gmail-contact-icon.svg" alt="gmail icon"></a>
+                <a href="mailto:kuzmanovi.dvori@gmail.com" class="call-btn call-btn--gmail"><img src="/src/assets/icons/gmail-contact-icon.svg" alt="gmail icon"></a>
                 <span>kuzmanovi.dvori@gmail.com</span>
               </div>
             </div>

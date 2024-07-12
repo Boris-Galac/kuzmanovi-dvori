@@ -23,4 +23,5 @@
 @import "pages/single-blog.css";
 
 /* utilities */
+@import "utilities/animations.css";
 @import "utilities/globals.css";
