@@ -1,0 +1,42 @@
+.gallery {
+  position: relative;
+  isolation: isolate;
+  padding-top: 10rem;
+}
+.main--gallery {
+  position: relative;
+  isolation: isolate;
+  background-color: var(--main-clr);
+}
+.gallery-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+.main--gallery .contact {
+  z-index: 2;
+}
+
+.gallery__wrapper {
+  display: grid;
+  gap: 4rem;
+}
+.gallery__album {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.gallery__album img {
+  outline: 3px solid hsl(203deg 40.45% 15.24%);
+}
+#baguetteBox-overlay .full-image {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 1rem;
+}

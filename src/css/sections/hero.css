@@ -26,7 +26,7 @@
 }
 .hero__content-box {
   background-color: hsla(0, 0%, 0%, 0.184);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(3px);
   padding-block: 2rem;
   padding-inline: 1rem;
   border-radius: 7px;

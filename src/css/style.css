@@ -18,6 +18,9 @@
 @import "sections/contact.css";
 /* pages */
 @import "pages/search.css";
+@import "pages/gallery.css";
+@import "pages/blogs.css";
+@import "pages/single-blog.css";
 
 /* utilities */
 @import "utilities/globals.css";

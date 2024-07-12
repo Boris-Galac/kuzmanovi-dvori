@@ -1,0 +1,295 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <meta name="description" content="Lorem ipsum dolor sit amet." />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="lorem, ipsum, dolor, sit, amet" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css"
+    />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script defer src="/src/js/main.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="index.html" class="header__logo"
+        ><img src="/src/assets/icons/logo.svg" alt=""
+      /></a>
+      <nav class="nav" id="nav" aria-expanded="false">
+        <!-- <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#dvori" class="nav__link">O dvorima</a>
+          </li>
+          <li class="nav__item">
+            <a href="#ponuda" class="nav__link">Ponuda</a>
+          </li>
+          <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+          <li class="nav__item">
+            <a href="#recenzije" class="nav__link">Recenzije</a>
+          </li>
+          <li class="nav__item">
+            <a href="#kontakt" class="nav__link">Kontakt</a>
+          </li>
+        </ul> -->
+      </nav>
+      <div class="nav__right-col">
+        <button class="search-btn">
+          <img src="/src/assets/icons/search-icon.svg" alt="search icon" />
+        </button>
+        <button
+          class="ham-btn"
+          aria-label="ham button"
+          data-active="false"
+          tabindex="0"
+          aria-controls="nav"
+        >
+          <div class="ham-line"></div>
+          <div class="ham-line"></div>
+          <div class="ham-line"></div>
+        </button>
+      </div>
+    </header>
+    <main class="main main--single-blog">
+      <!-- gallery -->
+      <img
+        class="gallery-overlay"
+        src="/src/assets/images/ponuda-overlay.png"
+        aria-hidden="true"
+      />
+      <section class="blogs">
+        <h2 class="h2-heading blogs-h2-heading dark-ornament-heading">Blog</h2>
+        <div class="container">
+          <div class="single-blog__wrapper">
+            <article class="single-blog-card">
+              <figure class="single-blog-card__thumbnail-wrapper">
+                <img
+                  src="/src/assets/images/blog-cover-img.jpg"
+                  alt="blog image"
+                />
+              </figure>
+              <div class="single-blog-card__content">
+                <h3 class="h3-heading single-blog-card-h3-heading">
+                  Pojedinačni blog
+                </h3>
+                <div class="single-blog-card__inner-content">
+                  <div class="single-blog-card__date">
+                    <img
+                      class="icon"
+                      src="/src/assets/icons/blog-date-icon.svg"
+                      alt="date icon"
+                    />
+                    <div class="date">01.07.2024.</div>
+                  </div>
+                  <p class="paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur, iusto quia minima sapiente possimus voluptates,
+                    debitis voluptate sint, ea quas vero ducimus exercitationem
+                    eos reprehenderit? Sed natus, autem eveniet ab fugiat
+                    placeat magni illum tenetur consequatur quas architecto
+                    expedita non tempora quis inventore explicabo magnam
+                    adipisci doloremque a, aspernatur fuga libero dolorem.
+                    Totam, accusamus autem eum et blanditiis incidunt ratione
+                    voluptatem deleniti nemo laborum odit. Quo expedita iste sed
+                    blanditiis unde maxime, voluptatibus cum temporibus
+                    voluptates reiciendis neque voluptas, qui at voluptatem vero
+                    sequi ut voluptatum, repellendus architecto! Animi tenetur
+                  </p>
+                  <img
+                    style="margin-block: 2rem"
+                    src="/src/assets/images/gallery/12-thumb.jpg"
+                    alt=""
+                  />
+                  <br />
+                  <p class="paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquid rerum nesciunt dignissimos itaque laboriosam. Amet,
+                    eum voluptate quis similique explicabo animi consectetur
+                    quos magni qui sint architecto, excepturi ad quaerat modi
+                    aut! Enim ducimus suscipit rerum vero, eveniet asperiores
+                    voluptate facilis assumenda fugit quis nam ex ipsa soluta
+                    sunt saepe totam in voluptatibus temporibus aliquam commodi
+                    quo consequuntur quod. Consequatur magni cupiditate, ipsa
+                    doloribus reprehenderit at, impedit, cumque porro accusamus
+                    quaerat quidem consectetur incidunt facilis. Id quod
+                    eligendi ipsum tenetur molestias. Assumenda aperiam nam sed
+                    magni excepturi aut, ullam quam inventore libero veritatis,
+                    qui expedita dolor ipsam fugiat obcaecati placeat.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- contact section -->
+      <section class="contact" id="kontakt">
+        <div class="container">
+          <div class="contact__outter-wrapper">
+            <div class="contact__wrapper">
+              <h2 class="h2-heading contact-h2-heading">Kontaktirajte nas</h2>
+              <div class="contact__content-wrapper">
+                <p class="paragraph">
+                  Provjerite raspolozivot, rezervirajte termin i ostavirite
+                  kominikaciju s nama.
+                </p>
+                <div class="contact__call-action-wrapper">
+                  <div class="contact__call-action">
+                    <a href="#" class="call-btn"
+                      ><img
+                        src="/src/assets/icons/phone-contact-icon.svg"
+                        alt="phone icon"
+                    /></a>
+                    <span>Stjepan: +385915378947</span>
+                  </div>
+                  <div class="contact__call-action">
+                    <a href="#" class="call-btn"
+                      ><img
+                        src="/src/assets/icons/phone-contact-icon.svg"
+                        alt="phone icon"
+                    /></a>
+                    <span>Marija: +385989655260</span>
+                  </div>
+                </div>
+              </div>
+              <div class="contact__content-wrapper">
+                <p class="paragraph">
+                  Ukoliko želite kontakt mailom, možete to uciniti klikom na
+                  gumb ispod.
+                </p>
+                <div class="contact__call-action">
+                  <a href="#" class="call-btn call-btn--gmail"
+                    ><img
+                      src="/src/assets/icons/gmail-contact-icon.svg"
+                      alt="gmail icon"
+                  /></a>
+                  <span>kuzmanovi.dvori@gmail.com</span>
+                </div>
+              </div>
+            </div>
+            <img
+              src="/src/assets/images/heading-ornament.svg"
+              alt="white ornament"
+            />
+            <div class="contact__wrapper">
+              <h2 class="h2-heading contact-h2-heading">Gdje se nalazimo</h2>
+              <div class="contact__location-wrapper">
+                <p class="paragraph">
+                  Da biste lakse dosli do nas, posluzite se google kartama.
+                </p>
+                <span class="contact__address"
+                  ><img
+                    class="icon"
+                    src="/src/assets/icons/location-icon.svg"
+                    alt="location"
+                  />
+                  <address class="paragraph--serif-font">
+                    Školska 13, Štitar, Vukovarsko-srijemska županija, Hrvatska
+                  </address></span
+                >
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2816.5551020282346!2d18.634748677515912!3d45.09481427107017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475c42821eae7ea7%3A0xd03c314fc2939080!2zxaBrb2xza2EgdWwuIDEzLCAzMjI3NCwgxaB0aXRhcg!5e0!3m2!1sen!2shr!4v1720700793497!5m2!1sen!2shr"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="google-map"
+              ></iframe>
+              <span class="contact__address"
+                ><img
+                  class="icon"
+                  src="/src/assets/icons/restaurant-icon.svg"
+                  alt="restaurant"
+                />
+                <p class="paragraph paragraph--serif-font">
+                  restoran “Rustica” se nalazi na 200m od nas.
+                </p></span
+              >
+            </div>
+          </div>
+        </div>
+        <img
+          class="contact__13-overlay"
+          src="/src/assets/images/contact-overlay-13.jpg"
+          aria-hidden="true"
+        />
+      </section>
+    </main>
+    <button
+      class="back-to-top-btn"
+      data-visible="false"
+      aria-label="scroll to top of the page"
+    >
+      <img src="/src/assets/icons/top-icon.svg" alt="scroll to top icon" />
+    </button>
+    <div class="overlay" data-active="false" aria-expanded="false">
+      <form class="search-form">
+        <div class="search-input-wrapper">
+          <input
+            type="text"
+            placeholder="Pretraži blogove..."
+            class="search-input"
+          />
+          <button class="search-form__submit" type="submit">
+            <img src="/src/assets/icons/search-icon.svg" aria-hidden="true" />
+          </button>
+        </div>
+      </form>
+    </div>
+    <footer class="footer">
+      <img
+        src="/src/assets/icons/logo.svg"
+        class="footer__logo"
+        alt="footer logo"
+      />
+      <nav class="footer__logo">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">O dvorima</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Kuzmanovi dvori</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Galerija</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Blog</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Recenzije</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__socials">
+        <a href="#"
+          ><img src="/src/assets/icons/fb-icon.svg" alt="facebook icon"
+        /></a>
+        <a href="#"
+          ><img src="/src/assets/icons/gmail-icon.svg" alt="gmail icon"
+        /></a>
+        <a href="#"
+          ><img src="/src/assets/icons/instagram-icon.svg" alt="instagram icon"
+        /></a>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2024 - All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+  </body>
+</html>

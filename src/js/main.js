@@ -89,3 +89,8 @@ window.addEventListener("scroll", (e) => {
   }
   lastScrollTop = scrollTop;
 });
+
+// baguette GALLERY
+if (document.querySelector(".main").classList.contains("main--gallery")) {
+  baguetteBox.run(".gallery");
+}
