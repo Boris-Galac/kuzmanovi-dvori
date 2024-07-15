@@ -150,6 +150,11 @@ h2 {
   font-size: clamp(2rem, 7vw, 3rem);
   color: var(--dark);
 }
+.potpis {
+  font-weight: 800;
+  font-size: 1.6rem;
+  margin-block: 1rem;
+}
 @media (min-width: 1200px) {
   .hero__subheadline-upper {
     font-size: 32px;
